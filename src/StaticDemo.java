@@ -2,11 +2,21 @@
 class Sex{
     int age;
     String gender;
-    double height;
+    static double height;
+    
+    static{
+        height = 6.2;
+    }
+    
+    public Sex(){
+    age = 20;
+    gender = "male";
+}
     
   public void show(){
     System.out.println(age + " : " + gender + " : " + height);
 }
+  
   
 }
 
@@ -22,15 +32,11 @@ public class StaticDemo {
        
         
         Sex omoh = new Sex();
-        omoh.age = 23;
-        omoh.gender = "male";
-        omoh.height = 6.2;
+        
         
         
         Sex Imade = new Sex();
-        Imade.age = 19;
-        Imade.gender = "female";
-        Imade.height = 5.5;
+        
         
         omoh.show();
         Imade.show();
